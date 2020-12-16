@@ -1,0 +1,291 @@
+.mainHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 65px;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.dripCoffee, .espresso, .latte, .americano, .cappucino, .tea, .hotChoco, .mocha, .icedTea, .water, .mate, .salad, .soup, .pastry {
+    display:flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.dripCoffee{
+    margin-left: -22px;
+}
+.dripCoffeeDes{
+    margin-left: 19px;
+}
+.espresso{
+    margin-left: -41px;
+}
+
+.americano{
+    margin-left: -20px;
+}
+
+.americanoDes{
+    margin-left: 16px;
+}
+.latteDes{
+    margin-left: 40px;
+}
+.cappucino{
+    margin-left: -23px;
+}
+.cappucinoDes{
+    margin-left: 19px;
+}
+.hotChoco{
+    margin-left: -9px;
+}
+.hotChocoDes{
+    margin-left: 46px
+}
+.mocha{
+    margin-left: -30px;
+}
+.mochaDes{
+    margin-left: 41px;
+}
+.icedTea{
+    margin-left: 10px
+}
+.icedTeaDes{
+    margin-left: 78px;
+}
+.water{
+    margin-left: -35px;
+}
+.waterDes{
+    margin-left: 55px;
+}
+.mate{
+    margin-left: -13px;
+}
+.salad{
+    margin-left: -30px;
+}
+.saladDes{
+    margin-left: 17px;
+}
+.soup{
+    margin-left:-35px;
+}
+.soupDes{
+    margin-left: 16px;
+}
+.pastry{
+    margin-left: -15px;
+}
+.pastryDes{
+    margin-left: 19px;
+}
+.headerList{
+    display:none;
+}
+.coffeeHeader, .hotDrinkHeader, .coldDrinkHeader, .foodHeader{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 10px solid #532e1c;
+    border-radius: 10px;
+    margin-right: 33%;
+    margin-left: 15px;
+}
+.companyName, .companyName2, .companyName3, .companyName4, .companyName5{
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.li, ul{
+    
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        align-items: flex-end;
+        width: auto;
+        margin-right: 7px;
+}
+.cart{
+    border-radius: 0 0 5px 5px;
+    border: none;
+    padding: 7px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 15px;
+    outline: none;
+    position: absolute;
+    right: 0px;
+}
+.cart:hover{
+    background-color: #c5a880;
+}
+body{
+    margin:0;
+}
+#checkout { 
+    width: 0px;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    border-radius: 5px 0 0 5px;
+    background-color: #e6e6e6;
+}
+.checkoutItems, .totalCost {
+    display: none;
+}
+
+.totalCost {
+    margin-bottom: 10px;
+}
+.checkoutButton {
+    height: 20px;
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+    display: none;
+}
+.checkoutButton:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.validationForm{
+    position: absolute;
+    height: auto;
+    left: 5%;
+    top: 25%;
+    z-index: 99;
+    width: 90%;
+    background-color: #e6e6e6;
+    padding: 5px 0 20px 10px;
+    box-shadow: 5px 5px 25px -2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.finalPayment, .startOver{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+.cashButton{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+.cardButton{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.exitValidationForm {
+    position:absolute;
+    top: 5px;
+    right: 5px;
+}
+.exitValidationForm:hover{
+    cursor: pointer;
+}
+
+.blurOn{
+    filter: blur(2px);
+}
+
+.blurOff{
+    filter: none;
+}
+
+@media only screen and (min-width: 1024px){
+    .menuItems{
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        align-items: flex-start;
+        width: auto;
+        margin-left: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mainHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #c5beb4;
+        width: 100%;
+        height: 65px;
+        list-style: none;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        color: #221c14;
+        font: 'Montserrat', sans-serif;
+    }
+    .cart:hover{
+        background-color: #221c14;
+        color: #c5beb4;
+    }
+    a:link {        
+        text-decoration: none; 
+        color: #221c14;
+    }
+    a:hover {
+        color: #221c14;
+    }
+    a:visited {
+        color: #221c14;
+    }
+    .cart{
+        color: black;
+    }
+    .headerList{
+        display:flex;
+    }
+    .coffeeHeader, .hotDrinkHeader, .coldDrinkHeader, .foodHeader{
+        font-size: 50px;
+        font-family: 'Montserrat', sans-serif;
+        border-bottom: 10px solid #221c14;
+        border-radius: 10px;
+        margin-right: 33%;
+        margin-left: 15px;
+        color: #c5beb4;
+    }
+
+    .hide{
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .show{
+        pointer-events: all;
+        opacity: 1;
+        transition: opacity 0.5s ease 0.5s;
+    }
+
+    .coffees, .hotDrinks, .coldDrinks, .food{
+        position: absolute;
+    }
+.validationForm{
+    background-color: #c5beb4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    width: 60em;   
+    position:absolute;
+    top: 20%;
+    left: 25%;
+    z-index: 99;
+} 
+.finalPayment{
+    font-family: 'Montserrat', sans-serif;
+}
+.cashButton{
+    font-family: 'Montserrat', sans-serif;
+}
+.cardButton{
+    font-family: 'Montserrat', sans-serif;
+}
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Point of Sale Project</title>
+</head>
+<body>
+    <header class="mainHeader">
+        <div class="companyName">Café <br>Remchenné</div>
+        <ul class="headerList">
+        <li><div class="companyName2"><a href="#">Coffee</a></div></li>
+        <li><div class="companyName3"><a href="#">Hot Drink</a></div></li>
+        <li><div class="companyName4"><a href="#">Cold Drink</a></div></li>
+        <li><div class="companyName5"><a href="#">Food</a></div></li>
+        </ul>
+    </header>
+    <div id="checkout"><div class="checkoutItems"></div><br><div class="totalCost"></div><button class="checkoutButton" onclick="checkoutScreen()">Checkout</button></div>
+    <button class="cart" onclick="toggleCart()">0 items in your cart</button>
+    <div class = "validationForm">
+
+        <button class="exitValidationForm" onclick="exitValidationForm()">X</button><br>
+        <div class="receiptItems"></div>
+        <div class="receiptTotal"></div>
+        <button class="cashButton" onclick="cashOption()">Cash</button>
+        <button class="cardButton" onclick="cardOption()">Card</button>
+
+        <label for="cashInput" id="cashLabel">How Much Cash?</label>
+        <input type="number" id="cashInput">
+
+        <label for="cardNumber" id="cardNumberLabel">Card Number:</label>
+
+        <input type="string" id="cardNumber">
+
+        <label for="CVV" id="cardCVVLabel">CVV:</label>
+        <input type="string" id="CVV">
+
+        <label for="expiration" id="expirationLabel">Expiration:</label>
+        <input type="string" id="expiration">
+
+        <div class="cashChange"></div>
+        <button class="finalPayment" onclick="finalPayment()">Complete Payment</button>
+        <button class="startOver" onclick='newOrder()'>Create New Order</button>
+        <div class="lastMessage"></div>
+
+    </div>
+    <div class="menuItems">
+        <div class="coffees">
+            <div class="coffeeHeader">Coffee</div>
+            <div class="dripCoffee" id="O0">
+                <img src="/assets/drip-coffee.jpg"/>
+                <div class="dripCoffeeDes"></div>
+            </div>
+            <div class="espresso" id="O1">
+                <img src="/assets/espresso.jpg"/>
+                <div class="espressoDes"></div>
+            </div>
+            <div class="americano" id="O2">
+                <img src="/assets/americano.jpg"/>
+                <div class="americanoDes"></div>
+            </div>
+            <div class="latte" id="O3">
+                <img src="/assets/latte.jpg"/>
+                <div class="latteDes"></div>
+            </div>
+            <div class="cappucino" id="O4">
+                <img src="/assets/cappucino.jpg"/>
+                <div class="cappucinoDes"></div>
+            </div>
+        </div>
+        <div class="hotDrinks hide" >
+            <div class="hotDrinkHeader">Hot Drinks</div>
+            <div class="tea" id="O5">
+                <img src="/assets/tea.jpg"/>
+                <div class="teaDes"></div>
+            </div>
+            <div class="hotChoco" id="O6">
+                <img src="/assets/hot-chocolate.jpg"/>
+                <div class="hotChocoDes"></div>
+            </div>
+            <div class="mocha" id="O7">
+                <img src="/assets/mocha.jpg"/>
+                <div class="mochaDes"></div>
+            </div>
+      </div>
+
+        <div class="coldDrinks hide">
+            <div class="coldDrinkHeader">Cold Drinks</div>
+            <div class="icedTea" id="O8">
+
+                <img src="/assets/iced-tea.jpg"/>
+                <div class="icedTeaDes"></div>
+            </div>
+            <div class="water" id="O9">
+                <img src="/assets/sparkling-water.PNG"/>
+                <div class="waterDes"></div>
+            </div>
+            <div class="mate" id="O10">
+                <img src="/assets/mate.jpg"/>
+                <div class="mateDes"></div>
+            </div>
+        </div>
+        <div class="food hide">
+            <div class="foodHeader">Food</div>
+            <div class="salad" id="O11">
+                <img src="/assets/salad.jpg"/>
+                <div class="saladDes"></div>
+            </div>
+            <div class="soup" id="O12">
+                <img src="/assets/soup.jpg"/>
+                <div class="soupDes"></div>
+            </div>
+            <div class="pastry" id="O13">
+                <img src="/assets/pastry.jpg"/>
+                <div class="pastryDes"></div>
+            </div>
+        </div>
+        </ul>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
